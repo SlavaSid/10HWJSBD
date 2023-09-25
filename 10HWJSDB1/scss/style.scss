@@ -40,7 +40,7 @@ button{
     }
 }
 .popup{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -75,6 +75,7 @@ button{
     .opened{
         opacity: 1;
         visibility: visible;
+        display: flex;
     
     }
 }

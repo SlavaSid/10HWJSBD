@@ -37,7 +37,7 @@ button {
 }
 
 .popup {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -69,8 +69,8 @@ button {
   text-decoration: none;
   padding: 5px 10px;
 }
-
-.popup.opened {
+.popup .opened {
   opacity: 1;
   visibility: visible;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

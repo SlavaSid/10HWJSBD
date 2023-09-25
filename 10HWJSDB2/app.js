@@ -5,26 +5,15 @@ const buttonMenu = document.querySelector('.panelAdd'),
      
 
       buttonClose.addEventListener('click', (event) => {
-        if(event.target.matches('.panelclose')){
-            panelMenu.style.width = '0px';
-            mainAdd.style.marginLeft ='0px';
-
-            mainAdd.style.transition ='0.5s';
-            panelMenu.style.transition ='0.5s';
-
-            buttonMenu.classList.remove('closed');
-        }
-    })
-
-
+                   
+            panelMenu.classList.remove('panel_close');
+            mainAdd.classList.remove('main_close');
+            buttonMenu.classList.remove('closed')
+        })
       buttonMenu.addEventListener('click', (event) => {
-        if(event.target.matches('.panelAdd')){
-            panelMenu.style.width = '250px';
-            mainAdd.style.marginLeft ='250px';
-            mainAdd.style.transition ='0.5s';
-            panelMenu.style.transition ='0.5s';
-            buttonMenu.classList.add('closed');
-        }
-    })
+        panelMenu.classList.add('panel_close');
+        mainAdd.classList.add('main_close');
+        buttonMenu.classList.add('closed');
+        })
 
  
