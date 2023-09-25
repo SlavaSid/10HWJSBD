@@ -8,6 +8,10 @@ const buttonMenu = document.querySelector('.panelAdd'),
         if(event.target.matches('.panelclose')){
             panelMenu.style.width = '0px';
             mainAdd.style.marginLeft ='0px';
+
+            mainAdd.style.transition ='0.5s';
+            panelMenu.style.transition ='0.5s';
+
             buttonMenu.classList.remove('closed');
         }
     })
@@ -17,6 +21,8 @@ const buttonMenu = document.querySelector('.panelAdd'),
         if(event.target.matches('.panelAdd')){
             panelMenu.style.width = '250px';
             mainAdd.style.marginLeft ='250px';
+            mainAdd.style.transition ='0.5s';
+            panelMenu.style.transition ='0.5s';
             buttonMenu.classList.add('closed');
         }
     })
