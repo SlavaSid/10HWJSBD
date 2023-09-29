@@ -69,7 +69,8 @@ button {
   text-decoration: none;
   padding: 5px 10px;
 }
-.popup .opened {
+
+.opened {
   opacity: 1;
   visibility: visible;
   display: flex;
